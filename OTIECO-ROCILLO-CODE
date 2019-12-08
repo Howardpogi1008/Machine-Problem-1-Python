@@ -1,0 +1,22 @@
+#MP PRoblem 1 Python!!!
+
+import numpy as np
+#Plots the library.
+import matplotlib.pyplot as plt
+
+n = np.arange(0,100)
+#Returns a new array and filled with zeros.
+y = np.zeros(100)
+
+#loop that ranges 0 to 100
+for i in n:
+    nrange = i
+    
+    while nrange>=10:
+        nrange = nrange-10
+        
+    z = ((nrange**2)-7)
+    y[i] = z
+    
+#PLots vertical lines with a given point to the height of y.
+plt.stem(n,y)
